@@ -17,4 +17,12 @@ $(document).ready( function() {
     audio.play();
     audio.currentTime = 0
   })
+
+  $('body').keydown(function(event) {
+    let noteLetter = event.key 
+
+    const audio = document.getElementById(notesHash[noteLetter]);
+    audio.play();
+    audio.currentTime = 0
+  })
 });
