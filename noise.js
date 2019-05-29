@@ -1,4 +1,4 @@
-const notesHash = {
+const notes = {
   'a': 'aAudio',
   'b': 'bAudio',
   'c': 'cAudio',
@@ -9,7 +9,7 @@ const notesHash = {
 };
 
 const playNote = (letter) => {
-  const audio = document.getElementById(notesHash[letter]);
+  const audio = document.getElementById(notes[letter]);
   audio.play();
   audio.currentTime = 0
 }
